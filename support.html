@@ -1,0 +1,253 @@
+<title>Mahmut — Support</title>
+<style>
+  :root {
+    --bg: #f5f8fb;
+    --surface: #ffffff;
+    --ink: #1c2733;
+    --ink-soft: #55677a;
+    --ink-faint: #8797a8;
+    --accent: #1d5fa8;
+    --accent-contrast: #ffffff;
+    --accent-soft: #e8f0fa;
+    --hairline: #dce4ec;
+    --code-bg: #eef3f8;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10161d;
+      --surface: #171f28;
+      --ink: #e7edf3;
+      --ink-soft: #9fb0c0;
+      --ink-faint: #64798c;
+      --accent: #6ba3e8;
+      --accent-contrast: #0d1a28;
+      --accent-soft: #1c2c40;
+      --hairline: #293544;
+      --code-bg: #1c2530;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #10161d;
+    --surface: #171f28;
+    --ink: #e7edf3;
+    --ink-soft: #9fb0c0;
+    --ink-faint: #64798c;
+    --accent: #6ba3e8;
+    --accent-contrast: #0d1a28;
+    --accent-soft: #1c2c40;
+    --hairline: #293544;
+    --code-bg: #1c2530;
+  }
+  :root[data-theme="light"] {
+    --bg: #f5f8fb;
+    --surface: #ffffff;
+    --ink: #1c2733;
+    --ink-soft: #55677a;
+    --ink-faint: #8797a8;
+    --accent: #1d5fa8;
+    --accent-contrast: #ffffff;
+    --accent-soft: #e8f0fa;
+    --hairline: #dce4ec;
+    --code-bg: #eef3f8;
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+  }
+  body {
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 6rem;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    margin-bottom: 2.75rem;
+    padding-bottom: 2.25rem;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(2rem, 5vw, 2.65rem);
+    line-height: 1.1;
+    margin: 0;
+    text-wrap: balance;
+    color: var(--ink);
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.25rem;
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+  }
+  .meta-row a { color: var(--accent); }
+
+  section {
+    margin-bottom: 2.85rem;
+    scroll-margin-top: 1.5rem;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+
+  p { margin: 0 0 1rem; max-width: 62ch; color: var(--ink); }
+  p.lead { font-size: 1.08rem; color: var(--ink-soft); }
+
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    padding: 1.6rem 1.75rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .contact-card .label {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+  .contact-card .email {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    color: var(--ink);
+  }
+  .contact-card a.button {
+    background: var(--accent);
+    color: var(--surface);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 0.65rem 1.25rem;
+    border-radius: 8px;
+    white-space: nowrap;
+    color: var(--accent-contrast);
+  }
+
+  .faq-item {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item h3 {
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: var(--ink);
+  }
+  .faq-item p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+
+  a { color: var(--accent); }
+
+  footer.doc-footer {
+    margin-top: 3.5rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--hairline);
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    max-width: 62ch;
+  }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <span class="eyebrow">Mahmut · Support</span>
+    <h1>Need a hand with Mahmut?</h1>
+    <div class="meta-row">
+      <span>Also see: <a href="./">Privacy Policy</a></span>
+    </div>
+  </header>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="lead">Mahmut is built and supported by a single developer. Email is the fastest way to reach me — for bug reports, questions, or anything else.</p>
+    <div class="contact-card">
+      <div>
+        <span class="label">Email</span>
+        <span class="email">canlimert@gmail.com</span>
+      </div>
+      <a class="button" href="mailto:canlimert@gmail.com?subject=Mahmut%20Support">Send an email</a>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Common questions</h2>
+
+    <div class="faq-item">
+      <h3>How do I play?</h3>
+      <p>Tap and hold the left or right half of the screen to steer Mahmut through the gap in each row of mountains. Let go to fly straight. Clip a peak and the run ends.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I reset my high score?</h3>
+      <p>There's currently no in-app reset option. Your best score and recent runs are stored locally on your device — deleting and reinstalling the app clears them.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does Mahmut show ads?</h3>
+      <p>No. Mahmut has no ads, no accounts, and no in-app purchases.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What's the App Tracking Transparency prompt for?</h3>
+      <p>It's used only to measure whether people who saw a Mahmut ad on Facebook or Instagram went on to play the game. Declining it doesn't change anything about how the game plays. See the <a href="./">Privacy Policy</a> for the full details.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What devices does Mahmut support?</h3>
+      <p>iPhone, running iOS 16 or later, in portrait orientation.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>I found a bug — what should I include in my report?</h3>
+      <p>Your iPhone model, iOS version, your score/what you were doing when it happened, and a screenshot if you have one. Email it to the address above.</p>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <p>Mahmut is an independent project. Response times may vary, but every email gets read.</p>
+  </footer>
+
+</div>

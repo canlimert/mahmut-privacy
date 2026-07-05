@@ -1,0 +1,395 @@
+<title>Mahmut — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f5f8fb;
+    --surface: #ffffff;
+    --ink: #1c2733;
+    --ink-soft: #55677a;
+    --ink-faint: #8797a8;
+    --accent: #1d5fa8;
+    --accent-soft: #e8f0fa;
+    --hairline: #dce4ec;
+    --code-bg: #eef3f8;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10161d;
+      --surface: #171f28;
+      --ink: #e7edf3;
+      --ink-soft: #9fb0c0;
+      --ink-faint: #64798c;
+      --accent: #6ba3e8;
+      --accent-soft: #1c2c40;
+      --hairline: #293544;
+      --code-bg: #1c2530;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #10161d;
+    --surface: #171f28;
+    --ink: #e7edf3;
+    --ink-soft: #9fb0c0;
+    --ink-faint: #64798c;
+    --accent: #6ba3e8;
+    --accent-soft: #1c2c40;
+    --hairline: #293544;
+    --code-bg: #1c2530;
+  }
+  :root[data-theme="light"] {
+    --bg: #f5f8fb;
+    --surface: #ffffff;
+    --ink: #1c2733;
+    --ink-soft: #55677a;
+    --ink-faint: #8797a8;
+    --accent: #1d5fa8;
+    --accent-soft: #e8f0fa;
+    --hairline: #dce4ec;
+    --code-bg: #eef3f8;
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+  }
+  body {
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 6rem;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    margin-bottom: 2.75rem;
+    padding-bottom: 2.25rem;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(2rem, 5vw, 2.65rem);
+    line-height: 1.1;
+    margin: 0;
+    text-wrap: balance;
+    color: var(--ink);
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.25rem;
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .meta-row strong { color: var(--ink); font-weight: 600; }
+
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 10px;
+    padding: 1.4rem 1.6rem;
+    margin-bottom: 3rem;
+  }
+  nav.toc h2 {
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 0.9rem;
+  }
+  nav.toc ol {
+    columns: 2;
+    column-gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: toc;
+  }
+  nav.toc li {
+    counter-increment: toc;
+    break-inside: avoid;
+    margin-bottom: 0.55rem;
+    font-size: 0.9rem;
+  }
+  nav.toc li::before {
+    content: counter(toc) ". ";
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+  }
+  nav.toc a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  nav.toc a:hover, nav.toc a:focus-visible {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  section {
+    margin-bottom: 2.85rem;
+    scroll-margin-top: 1.5rem;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 1.6rem 0 0.6rem;
+    color: var(--ink);
+  }
+
+  p { margin: 0 0 1rem; max-width: 62ch; color: var(--ink); }
+  p.lead {
+    font-size: 1.08rem;
+    color: var(--ink-soft);
+  }
+
+  ul, ol.plain { margin: 0 0 1rem; padding-left: 1.3rem; max-width: 62ch; }
+  li { margin-bottom: 0.5rem; }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.75rem 0 1.5rem;
+    font-size: 0.92rem;
+    overflow-x: auto;
+    display: block;
+  }
+  .data-table thead, .data-table tbody { display: table; width: 100%; table-layout: fixed; }
+  .data-table th {
+    text-align: left;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+    padding: 0.5rem 0.75rem 0.5rem 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .data-table td {
+    padding: 0.65rem 0.75rem 0.65rem 0;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: top;
+    color: var(--ink-soft);
+  }
+  .data-table td:first-child { color: var(--ink); font-weight: 600; }
+
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 0.95rem 1.15rem;
+    margin: 1.1rem 0 1.4rem;
+    max-width: 62ch;
+  }
+  .callout p { margin: 0; font-size: 0.92rem; color: var(--ink); }
+  .callout p + p { margin-top: 0.5rem; }
+
+  .not-collected {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.75rem 0 1.4rem;
+  }
+  .chip {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    background: var(--code-bg);
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    padding: 0.3rem 0.75rem;
+  }
+  .chip::before { content: "— "; color: var(--ink-faint); }
+
+  a { color: var(--accent); }
+
+  code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: var(--code-bg);
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.88em;
+  }
+
+  footer.doc-footer {
+    margin-top: 3.5rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--hairline);
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    max-width: 62ch;
+  }
+
+  @media (max-width: 560px) {
+    nav.toc ol { columns: 1; }
+  }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <span class="eyebrow">Mahmut · Privacy Policy</span>
+    <h1>How Mahmut handles your data</h1>
+    <div class="meta-row">
+      <span><strong>Last updated:</strong> July 5, 2026</span>
+      <span><strong>Applies to:</strong> the Mahmut iOS app</span>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#use">How we use it</a></li>
+      <li><a href="#third-party">Third-party services</a></li>
+      <li><a href="#att">Tracking &amp; advertising</a></li>
+      <li><a href="#storage">Storage &amp; retention</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#choices">Your choices</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2>Overview</h2>
+    <p class="lead">Mahmut is a small arcade game. It doesn't have accounts, logins, or in-app purchases. This page explains, plainly, the only two things it sends off your device: anonymous gameplay analytics and — only if you allow it — an advertising identifier used to measure our ad campaigns.</p>
+    <p>Nothing here was written from a legal template first and reverse-engineered to fit; it describes what the app actually does, point by point.</p>
+  </section>
+
+  <section id="collect">
+    <h2>Information we collect</h2>
+
+    <h3>Usage &amp; analytics data (via Firebase)</h3>
+    <p>The app uses Firebase Analytics (provided by Google) to understand how the game is played. It logs a small set of custom events, plus a standard baseline Firebase attaches to every app that integrates it:</p>
+    <table class="data-table">
+      <thead><tr><th>Event</th><th>What it tells us</th></tr></thead>
+      <tbody>
+        <tr><td>game_start</td><td>A run began.</td></tr>
+        <tr><td>game_over</td><td>A run ended, with the score reached.</td></tr>
+        <tr><td>new_high_score</td><td>A personal best was set, with the score.</td></tr>
+      </tbody>
+    </table>
+    <p>Alongside those, Firebase automatically attaches standard technical fields to every event: device model, OS version, app version, language/country (from your device's locale, not GPS), timezone, session length, and an anonymous per-install identifier generated by Firebase itself.</p>
+    <p><strong>This does not include Apple's advertising identifier (IDFA).</strong> The Firebase module used in this app is configured without IDFA support, so Firebase never sees or stores it.</p>
+
+    <h3>Advertising &amp; attribution data (via Meta)</h3>
+    <p>Separately, the app integrates the Meta (Facebook) SDK — not to show ads inside the game, but to measure the performance of ad campaigns we run for Mahmut on Facebook and Instagram. It logs the same three milestones (game_start, game_over with score, new_high_score with score) to Meta, so we can tell whether people who saw an ad actually played the game.</p>
+    <p>If you grant tracking permission when asked (see <a href="#att">Tracking &amp; advertising</a> below), this data is linked to your device's advertising identifier (IDFA). If you decline, Meta still receives the anonymous event counts, but without anything tying them to your specific device.</p>
+
+    <h3>Locally stored data</h3>
+    <p>Your best score and recent run history are saved directly on your device (iOS's standard app storage) so they persist between sessions. This never leaves your device and we never see it.</p>
+
+    <h3>What we don't collect</h3>
+    <div class="not-collected">
+      <span class="chip">Name, email, or account information</span>
+      <span class="chip">Precise location (GPS)</span>
+      <span class="chip">Contacts, photos, camera, or microphone</span>
+      <span class="chip">Payment information</span>
+      <span class="chip">Anything typed or entered by you</span>
+    </div>
+  </section>
+
+  <section id="use">
+    <h2>How we use it</h2>
+    <ul>
+      <li>To understand which parts of the game people actually play, so we can improve the difficulty curve, fix bugs, and prioritize what to build next.</li>
+      <li>To measure whether our advertising on Meta's platforms is reaching people who go on to play the game, so we can spend our (small) marketing budget on what works.</li>
+    </ul>
+    <p>We do not sell your data, and we do not share it with anyone beyond the service providers named in this policy.</p>
+  </section>
+
+  <section id="third-party">
+    <h2>Third-party services</h2>
+    <p>Two external services process data on our behalf, each under their own privacy policy:</p>
+    <table class="data-table">
+      <thead><tr><th>Service</th><th>Purpose</th><th>Their policy</th></tr></thead>
+      <tbody>
+        <tr><td>Firebase (Google LLC)</td><td>Anonymous gameplay analytics</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td></tr>
+        <tr><td>Meta Platforms, Inc.</td><td>Ad campaign measurement &amp; attribution</td><td><a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">facebook.com/privacy/policy</a></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="att">
+    <h2>Tracking &amp; advertising</h2>
+    <p>The first time you open Mahmut, iOS will show Apple's standard App Tracking Transparency prompt, asking whether the app can track your activity across other companies' apps and websites. This exists specifically because of the Meta integration described above.</p>
+    <div class="callout">
+      <p><strong>Allowing tracking</strong> lets us attribute app installs and in-game milestones to specific ad campaigns via your device's advertising identifier.</p>
+      <p><strong>Declining</strong> has zero effect on gameplay — every feature works identically either way. It only means our ad measurement is less precise.</p>
+    </div>
+    <p>To be clear: <strong>Mahmut does not display any ads inside the app.</strong> The Meta SDK here is used only to measure ads we run externally on Facebook/Instagram — never to serve ads to you while you're playing.</p>
+  </section>
+
+  <section id="storage">
+    <h2>Storage &amp; retention</h2>
+    <p>Analytics and attribution events sent to Firebase and Meta are retained according to those providers' own data retention schedules, which we don't control directly. Your locally stored best score and run history remain on your device until you delete the app — there is currently no in-app reset option.</p>
+  </section>
+
+  <section id="children">
+    <h2>Children's privacy</h2>
+    <p>Mahmut is a general-audience game and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, contact us using the details below and we'll address it.</p>
+  </section>
+
+  <section id="choices">
+    <h2>Your choices</h2>
+    <ul>
+      <li><strong>Change your tracking choice anytime:</strong> iOS Settings → Privacy &amp; Security → Tracking, or Settings → Mahmut directly.</li>
+      <li><strong>Clear local data:</strong> delete the app — this removes your saved score and run history immediately.</li>
+      <li><strong>Ask us about your data:</strong> use the contact details below; we'll do what we reasonably can given that most data is held anonymously by our providers, not tied to an identifiable person.</li>
+    </ul>
+  </section>
+
+  <section id="changes">
+    <h2>Changes to this policy</h2>
+    <p>If what the app collects changes — say, we add a new analytics event or a new provider — we'll update this page and the "Last updated" date at the top.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Questions about this policy or your data can be sent to <a href="mailto:canlimert@gmail.com">canlimert@gmail.com</a>.</p>
+  </section>
+
+  <footer class="doc-footer">
+    <p>This policy was written to accurately describe Mahmut's actual technical implementation as of the date above. It's a plain-language description, not a substitute for legal advice — if you have users in a jurisdiction with specific requirements (GDPR, CCPA, etc.), it's worth having it reviewed by counsel familiar with those rules.</p>
+  </footer>
+
+</div>
